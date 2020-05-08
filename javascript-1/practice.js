@@ -105,14 +105,14 @@ let me = {
 function bigOrSmall(arr){
 	let answers = [];
 	for(let i = 0; i < arr.length; i++){
-		if(i <= 100){
+		if(arr[i] <= 100){
 			answers.push('small');
 		} else {
 			answers.push('big');
-			}
 		}
-		return answers;
 	}
+	return answers;
+}
 
 //////////////////PROBLEM 13////////////////////
 
@@ -121,8 +121,8 @@ function bigOrSmall(arr){
 //Code Here
 function arrayReverser(arr){
 	let reversed = [];
-	for (let i = arr.length; i < arr.length - 1; i--) {
-		reversed.push(arr[i], i)
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed.push(arr[i]);
 	}
 	return reversed;
 }
@@ -163,10 +163,8 @@ let total = myNumbers.reduce(function(acc, element){
 
 // Code Here
 let myNumbersIndex = [];
-arr.forEach(element => {
-	myNumbersIndex = arr[i];
-	myNumbersIndex[i].push(arr[i]);
-})
+
+  
 
 //////////////////PROBLEM 18////////////////////
 
@@ -189,7 +187,10 @@ const people = [
 ]
 
 // Code Here
- 
+ let enemies = people.filter(item => item === true); {
+ enemies.push(people.name)
+ }
+ console.log(enemies)
 
 //////////////////PROBLEM 20////////////////////
 
